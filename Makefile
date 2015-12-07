@@ -36,7 +36,7 @@ running: help
 	-@echo "| RUNNING               |"
 	-@echo "+-----------------------+"
 	-@echo ""
-	-@ps aux | grep "SCREEN.*pocketmine"  | grep -v grep
+	-@./bin/running.sh
 	-@echo ""
 
 .PHONY: log
