@@ -34,7 +34,7 @@ make attach
 #### detach (while attached)
 
 ```bash
-CTRL+a
+CTRL + a
 d
 ```
 
