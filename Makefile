@@ -12,7 +12,7 @@ help:
 	-@echo "  make running   : show if server is running"
 	-@echo ""
 
-start: stop
+start: help
 	-@echo "+-----------------------+"
 	-@echo "| START                 |"
 	-@echo "+-----------------------+"
