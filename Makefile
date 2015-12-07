@@ -8,7 +8,7 @@ help:
 	-@echo ""
 	-@echo "  make start     : start server"
 	-@echo "  make stop      : stop server"
-	-@echo "  make game      : attach to server (USE CTRL-A d to exit!)"
+	-@echo "  make attach    : attach to server (USE CTRL-A d to exit!)"
 	-@echo "  make running   : show if server is running"
 	-@echo ""
 
@@ -28,7 +28,7 @@ stop: help
 	-@./bin/stop.sh
 	-@echo ""
 
-game:
+attach:
 	-@./bin/attach.sh
 
 running: help
