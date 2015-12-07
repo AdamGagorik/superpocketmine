@@ -4,6 +4,15 @@ TOPLEVEL=`git rev-parse --show-toplevel`
 cd "${TOPLEVEL}" 
 cd ./pocketmine
 
+if pgrep "php" > /dev/null; then
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    echo ""
+    echo "Please stop any existing servers before starting a new one."
+    echo ""
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    exit -1
+fi
+
 echo "****************************************"
 echo "* POCKETMINE SERVER STARTED            *"
 echo "****************************************"
