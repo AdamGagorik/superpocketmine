@@ -1,6 +1,7 @@
 #!/bin/bash -e
+TOPLEVEL=`git rev-parse --show-toplevel`
 
-cd ~
+cd "${TOPLEVEL}" 
 cd ./pocketmine
 
 echo "****************************************"
@@ -9,4 +10,4 @@ echo "****************************************"
 
 screen -d -m -L -c ../bin/screenrc -S pocketmine ../bin/wrap.sh ./start.sh
 
-cd ~
+cd "${TOPLEVEL}" 
