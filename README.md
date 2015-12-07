@@ -1,7 +1,7 @@
 PocketMine
 ==========
 
-This is a PocketMine server setup to run on a Linux server.
+This is a PocketMine setup to run on a Linux server.
 
 Usage
 =====
